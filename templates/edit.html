@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Edit
+{% endblock %}
+
+{% block body %}
+
+<div class="edit shadow">
+
+    <p class="heading"><b>{{ task.name }}</b></p>
+
+    <form method="POST" class="form-control">
+        {% csrf_token %}
+
+        {{ form.as_p }}
+
+        <p class="button">
+            <button class="btn btn-outline-success" type="submit">Ok</button>
+        </p>
+    </form>
+
+</div>
+
+{% endblock %}

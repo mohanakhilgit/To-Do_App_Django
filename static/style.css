@@ -1,0 +1,105 @@
+body {
+    background-image: url('/static/todo_bg.jpg');
+    background-size: cover;
+    margin: 2% 0;
+}
+
+.banner-text {
+    background-color: rgba(0, 0, 0, .5);
+    color: white;
+    padding: 10px;
+}
+
+.main-container {
+    padding: 10px;
+}
+
+.form-group {
+    width: 80%;
+    margin-top: 5%;
+    padding-bottom: 10%;
+}
+
+.heading {
+    background-color: rgba(0, 0, 0, .5);
+    color: white;
+    padding: 10px;
+    margin: none;
+    width: 25%;
+    border-radius: 25px;
+}
+
+.form-control {
+    border-radius: 20px;
+    padding: 30px;
+    background: rgba(169, 175, 126, 0.6);
+}
+
+.form-input {
+    height: 50px;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-bottom: 2px solid black;
+    background-color: transparent;
+}
+
+
+.task-container {
+    background: rgba(169, 175, 126, 0.7);
+    border-radius: 10px;
+}
+
+.task-column {
+    padding: 2%;
+}
+
+.task {
+    padding: 2%;
+}
+
+.task-content {
+    margin: 5% 0;
+}
+
+.delete {
+    padding: 30px;
+    border-radius: 20px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.delete, p {
+    font-size: 20px;
+}
+
+.delete-btns {
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    margin: 0;
+    padding: 10px;
+}
+
+.edit {
+    padding: 30px;
+    border-radius: 20px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.edit .heading {
+    width: 200px;
+}
+
+.edit .button {
+    display: flex;
+    justify-content: center;
+}

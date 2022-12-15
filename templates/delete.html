@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Delete
+{% endblock %}
+
+{% block body %}
+
+<div class="delete shadow">
+
+    <form method="POST">
+        {% csrf_token %}
+
+        <p><b>Are you sure you want to mark this task Done ?</b></p>
+        <div class="delete-btns">
+            <p class="button">
+                <button class="btn btn-outline-danger" type="submit">Ok</button>
+            </p>
+            <p class="button">
+                <a class="btn btn-outline-success" href="{% url 'todo:home' %}">Cancel</a>
+            </p>
+        </div>
+</div>
+</form>
+
+</div>
+
+{% endblock %}
